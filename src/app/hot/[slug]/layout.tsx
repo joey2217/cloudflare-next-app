@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/button'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
+export const runtime = 'edge';
+
 const cates = [
   {
     img: '/images/weibo.png',
