@@ -29,7 +29,7 @@ export default async function Page({ params }: Props) {
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
-  const data = await res.json()
+  const data = (await res.json()) as { code: number; data: Datum[] }
   if (data.code !== 200) {
     throw new Error('Failed to fetch data')
   }
