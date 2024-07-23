@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
   // await myKv.put('suffix', ' from a KV store!')
   // const suffix = await myKv.get('suffix')
   // responseText += suffix
-  const res = await fetch('https://plain-hall-20c8.joey666.workers.dev/')
+  const res = await fetch('https://rough-snowflake-d9ad.joey666.workers.dev/')
   const data = await res.json()
   return Response.json(data)
 }
