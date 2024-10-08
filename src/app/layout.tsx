@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils'
 import { PropsWithChildren } from 'react'
 import './globals.css'
 import Header from '@/components/Header'
+import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
   title: '工具箱',
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       >
         <Header />
         <main className="container">{children}</main>
+        <Toaster />
       </body>
     </html>
   )
